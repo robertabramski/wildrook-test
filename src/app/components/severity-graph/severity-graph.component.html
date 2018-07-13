@@ -1,0 +1,11 @@
+<div class="container">
+  <a class="{{info.key | lowercase}} percentage"
+    *ngFor="let info of severityInfo | keys"
+    (click)="scrollToSeverity(info.key)"
+    [style.width]="info.value.percentage + '%'"
+    [style.display]="info.value.level ? 'inline-block' : 'none'">
+
+    <span class="label">{{info.key}}</span>
+    <span class="count">{{info.value.count}}</span>
+  </a>
+</div>

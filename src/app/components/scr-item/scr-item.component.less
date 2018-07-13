@@ -1,0 +1,53 @@
+@import '../../../styles.less';
+
+:host {
+  display: block;
+}
+
+div.container {
+  display: block;
+  width: 100%;
+  background-color: @app-bg-color-light;
+  border-bottom: 2px solid @app-bg-color;
+  color: @app-bg-color;
+
+  div.severity {
+    border-left-width: @scr-item-left-border-width;
+    border-left-style: solid;
+    padding: 1em;
+
+    &.low { border-left-color: @severity-low-color; }
+    &.medium { border-left-color: @severity-medium-color; }
+    &.high { border-left-color: @severity-high-color; }
+
+    h3 {
+      font-size: 1.03em;
+      margin: 0 0 .3em 0;
+
+      span.badge {
+        color: @app-bg-color-dark;
+        font-size: .8em;
+        font-weight: 400;
+        padding: 4px 10px 3px 9px;
+        float: right;
+        background-color: @scr-item-badge-bg-color;
+        .border-radius(5px, 5px, 5px, 5px);
+
+      }
+    }
+
+    p {
+      margin: 0 0 1em 0;
+    }
+
+    code {
+      display: block;
+      padding-top: 1em;
+      border-top: 1px solid @app-bg-color;
+
+      pre {
+        margin: 0;
+      }
+    }
+  }
+}

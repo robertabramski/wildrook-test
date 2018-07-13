@@ -1,0 +1,8 @@
+<div class="severity-group" *ngFor="let sortedScr of sortedScrs | keys">
+  <div class="severity-heading">
+    <a class="severity {{sortedScr.key | lowercase}}" id="{{sortedScr.key | lowercase}}">
+      {{sortedScr.value.length}} {{sortedScr.key | titlecase}} Priority Recommendations
+    </a>
+  </div>
+  <app-scr-item *ngFor="let scr of sortedScr.value" [scr]="scr"></app-scr-item>
+</div>

@@ -1,0 +1,60 @@
+@import '../../../styles.less';
+
+:host {
+  display: block;
+}
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  border-bottom: 2px solid @app-bg-color;
+
+  a.percentage {
+    display: inline-block;
+    cursor: pointer;
+    padding: @scr-item-side-padding 0;
+
+    /*
+    Ordering of component graph is handled by flexbox.
+    Any change in naming (except casing) on server for
+    severity will break this.
+    */
+    &.low { .graph-button(@severity-low-color, 3); }
+    &.medium { .graph-button(@severity-medium-color, 2); }
+    &.high { .graph-button(@severity-high-color, 1); }
+
+    span {
+      line-height: .8;
+      color: @app-bg-color-dark;
+      font-weight: 500;
+
+      &.label {
+        float: left;
+        margin-left: @scr-item-side-padding;
+      }
+
+      &.count {
+        float: right;
+        margin-right: @scr-item-side-padding;
+      }
+    }
+  }
+}
+
+.graph-button(@color, @order) {
+  order: @order;
+  background-color: @color;
+  .severity-text(@color);
+
+  span.count, span.label {
+    .severity-text(@color);
+  }
+
+  &:hover {
+    span.label {
+      .severity-hover-text(@color);
+      .transition(.2s, ease-in-out);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../styles.less';
+
+:host {
+  display: block;
+}
+
+div.severity-group {
+  margin-bottom: 1em;
+
+  div.severity-heading {
+    border-bottom: 6px solid @app-bg-color;
+
+    a.severity {
+      display: block;
+      color: @app-text-color;
+      font-size: 1.15em;
+      text-decoration: none;
+      margin: 0;
+      padding: @scr-item-side-padding;
+      background-color: @app-bg-color-dark;
+      border-left-width: @scr-item-left-border-width;
+      border-left-style: solid;
+
+      &.high { border-left-color: @severity-high-color; }
+      &.medium { border-left-color: @severity-medium-color; }
+      &.low { border-left-color: @severity-low-color; }
+    }
+  }
+}

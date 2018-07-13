@@ -1,0 +1,32 @@
+@import '../styles.less';
+
+@side-pad: @scr-item-side-padding;
+
+main, nav {
+  width: 90%;
+  max-width: @app-max-width;
+  min-width: @app-min-width;
+}
+
+main {
+  margin: 0 auto;
+  position: relative;
+
+  nav {
+    position: fixed;
+    background-color: @app-bg-color-dark;
+  }
+
+  section {
+    padding-top: 110px;
+  }
+
+  h2 {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0;
+    padding: @side-pad 0 @side-pad @side-pad;
+  }
+}

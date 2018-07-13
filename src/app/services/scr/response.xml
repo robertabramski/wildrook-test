@@ -1,0 +1,184 @@
+<ArrayOfSubmission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Identity &amp; access</category>
+    <description>Guest access should not be enabled</description>
+    <resource>SYSTEM</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>MEDIUM</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Data security</category>
+    <description>Data encryption in transit policies for storage accounts</description>
+    <resource>myapp.blob.core.windows.net</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Compute &amp; apps</category>
+    <description>Encryption of OS disks attached to VMs</description>
+    <resource>myapp-vm1</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>MEDIUM</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Networking</category>
+    <description>Internet facing access control to cloud infrastructure using RDP</description>
+    <resource>myapp-vm1-nic1</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Logging &amp; monitoring</category>
+    <description>Configuration of activity alerts for SQL server firewall rules</description>
+    <resource>myapp.database.windows.net</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>LOW</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Identity &amp; access</category>
+    <description>Multi-factor authentication policies for administrators</description>
+    <resource>Azure Active Directory</resource>
+    <resourcegroup>SYSTEM</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Identity &amp; access</category>
+    <description>Multi-factor authentication policies for users</description>
+    <resource>Azure Active Directory</resource>
+    <resourcegroup>SYSTEM</resourcegroup>
+    <severity>LOW</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Identity &amp; access</category>
+    <description>Password security policies</description>
+    <resource>Azure Active Directory</resource>
+    <resourcegroup>SYSTEM</resourcegroup>
+    <severity>MEDIUM</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Identity &amp; access</category>
+    <description>User consent policies for application access to company data</description>
+    <resource>Azure Active Directory</resource>
+    <resourcegroup>SYSTEM</resourcegroup>
+    <severity>LOW</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Identity &amp; access</category>
+    <description>Access controls to cloud admin portal</description>
+    <resource>Azure Active Directory</resource>
+    <resourcegroup>SYSTEM</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Identity &amp; access</category>
+    <description>Azure AD security group management policies</description>
+    <resource>Azure Active Directory</resource>
+    <resourcegroup>SYSTEM</resourcegroup>
+    <severity>MEDIUM</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Identity &amp; access</category>
+    <description>Access control of cloud subscriptions</description>
+    <resource>Azure Active Directory</resource>
+    <resourcegroup>SYSTEM</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Data security</category>
+    <description>Data encryption at rest policies for storage accounts</description>
+    <resource>salesdata.blob.core.windows.net</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Data security</category>
+    <description>Data encryption at rest policies for fileservices</description>
+    <resource>customerdata.files.core.windows.net</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Data security</category>
+    <description>SQL servers and SQL databases auditing controls</description>
+    <resource>mydb1.database.windows.net</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>MEDIUM</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Data security</category>
+    <description>Threat detection controls on SQL servers and databases</description>
+    <resource>mydb1.database.windows.net</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Data security</category>
+    <description>Data encryption of SQL databases</description>
+    <resource>myapp.database.windows.net</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Compute &amp; apps</category>
+    <description>Encryption of data disks attached to VMs</description>
+    <resource>myapp-vm1</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Compute &amp; apps</category>
+    <description>Open ports, protocols and services on VMs</description>
+    <resource>myapp-vm1</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>MEDIUM</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Compute &amp; apps</category>
+    <description>Expiry of SSL certificate</description>
+    <resource>www.myapp.com</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>LOW</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Compute &amp; apps</category>
+    <description>Resource Locks are set for mission critical cloud infrastructure</description>
+    <resource>myapp1-vm</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Networking</category>
+    <description>Internet facing access control to cloud infrastructure using SSH</description>
+    <resource>ngrx1-vm</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>HIGH</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Networking</category>
+    <description>Network Security Group Flow logging enabled</description>
+    <resource>myapp-nsg</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>LOW</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Networking</category>
+    <description>Network Watcher enabled</description>
+    <resource>myapp-nsg</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>LOW</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Logging &amp; monitoring</category>
+    <description>Azure KeyVault logging enabled</description>
+    <resource>contosokeys.vault.azure.net</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>LOW</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+  <Submission_x0023_0.SecurityControlRecommendations>
+    <category>Logging &amp; monitoring</category>
+    <description>Configuration of activity alerts for Azure Security Policies</description>
+    <resource>SYSTEM</resource>
+    <resourcegroup>MyApp RG</resourcegroup>
+    <severity>LOW</severity>
+  </Submission_x0023_0.SecurityControlRecommendations>
+</ArrayOfSubmission_x0023_0.SecurityControlRecommendations>

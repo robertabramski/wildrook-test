@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="severity {{scr.severity | lowercase}}">
+    <h3>
+      {{scr.category | uppercase}}
+      <span class="badge {{scr.severity | lowercase}}">{{scr.severity}}</span>
+    </h3>
+    <p>{{scr.description}}</p>
+    <code><pre>Resource: {{scr.resource}}
+   Group: {{scr.resourceGroup}}</pre>
+    </code>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<main *ngIf="!scrs">
+  <nav><h2>Loading ...</h2></nav>
+</main>
+<main *ngIf="scrs && scrs.length">
+  <nav>
+    <h2>{{scrs.length}} Security Control Recommendations</h2>
+    <app-severity-graph [scrs]="scrs"></app-severity-graph>
+  </nav>
+  <section [style.paddingTop]="navOffsetPadding">
+    <app-scr-items [scrs]="scrs"></app-scr-items>
+  </section>
+</main>

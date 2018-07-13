@@ -1,0 +1,42 @@
+@import './normalize.css';
+@import './elements.less';
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:400,500,900');
+
+@app-font-family: 'Gothic A1', Helvetica, sans-serif;
+
+@app-bg-color: #49535d;
+@app-bg-color-light: #e3e5e7;
+@app-bg-color-dark: #2f3338;
+
+@app-text-color: @app-bg-color-light;
+
+@app-max-width: 1200px;
+@app-min-width: 500px;
+
+@severity-high-color: #c64e40;
+@severity-medium-color: #cc8a20;
+@severity-low-color: #cfb62f;
+
+@severity-high-text-color: .severity-text(@severity-high-color);
+@severity-medium-text-color: .severity-text(@severity-medium-color);
+@severity-low-text-color: .severity-text(@severity-low-color);
+
+@scr-item-left-border-width: 16px;
+@scr-item-side-padding: .7em;
+@scr-item-badge-bg-color: #cbced1;
+
+html, body {
+  background-color: @app-bg-color;
+  color: @app-text-color;
+  font-family: @app-font-family;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+.severity-text(@color) {
+  color: darken(@color, 20%);
+}
+
+.severity-hover-text(@color) {
+  color: lighten(@color, 25%);
+}
