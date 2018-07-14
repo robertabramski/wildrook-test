@@ -9,10 +9,15 @@ import { Scr } from '../../services/scr/scr';
   outputs: ['sortedScrs']
 })
 export class ScrItemsComponent implements OnInit {
-  sortedScrs:object = {};
   scrs:Scr[] = null;
+  sortedScrs:object = {};
+  scrItemsVisible:boolean[] = [];
 
   constructor() { }
+
+  toggleScrItems(i) {
+    this.scrItemsVisible[i] = !this.scrItemsVisible[i];
+  }
 
   ngOnInit() {
     this.scrs.sort((a, b) => {
@@ -21,6 +26,7 @@ export class ScrItemsComponent implements OnInit {
     .forEach(scr => {
       if(!(scr.severity in this.sortedScrs)) {
         this.sortedScrs[scr.severity] = [scr];
+        this.scrItemsVisible.push(true);
       } else {
         this.sortedScrs[scr.severity].push(scr);
       }

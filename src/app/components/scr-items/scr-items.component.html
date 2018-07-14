@@ -1,8 +1,11 @@
-<div class="severity-group" *ngFor="let sortedScr of sortedScrs | keys">
-  <div class="severity-heading">
-    <a class="severity {{sortedScr.key | lowercase}}" id="{{sortedScr.key | lowercase}}">
+<div class="severity-group" *ngFor="let sortedScr of sortedScrs | keys; let i = index">
+  <a class="severity-heading" (click)="toggleScrItems(i)">
+    <div id="{{sortedScr.key | lowercase}}" class="severity {{sortedScr.key | lowercase}}">
       {{sortedScr.value.length}} {{sortedScr.key | titlecase}} Priority Recommendations
-    </a>
+      <span class="arrow" [ngClass]="{'closed': scrItemsVisible[i]}"></span>
+    </div>
+  </a>
+  <div class="scr-items" *ngIf="scrItemsVisible[i]">
+    <app-scr-item *ngFor="let scr of sortedScr.value" [scr]="scr"></app-scr-item>
   </div>
-  <app-scr-item *ngFor="let scr of sortedScr.value" [scr]="scr"></app-scr-item>
 </div>
