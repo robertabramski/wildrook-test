@@ -1,4 +1,8 @@
-// SSoT exists here for severity strings.
+/*
+The SSoT exists here for severity strings.
+The NONE type is probably overkill, but thought
+it might be useful for error handling.
+*/
 export enum Severity {
   HIGH   = 'HIGH',
   MEDIUM = 'MEDIUM',
