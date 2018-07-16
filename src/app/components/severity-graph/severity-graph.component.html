@@ -2,7 +2,9 @@
   <a class="{{info.key | lowercase}} percentage"
     *ngFor="let info of severityInfo | keys"
     (click)="scrollToSeverity(info.key)"
-    [style.width]="info.value.percentage + '%'"
+    (mouseover)="expandGraph(info.key)"
+    (mouseout)="revertGraphRollover()"
+    [style.width]="graphWidths[info.key] + '%'"
     [style.display]="info.value.level ? 'inline-block' : 'none'">
 
     <span class="label">{{info.key}}</span>

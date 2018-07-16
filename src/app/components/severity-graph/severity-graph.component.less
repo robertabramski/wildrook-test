@@ -14,6 +14,7 @@ div.container {
     display: inline-block;
     cursor: pointer;
     padding: @scr-item-side-padding 0;
+    .transition(.2s);
 
     /*
     Ordering of component graph is handled by flexbox.
@@ -49,12 +50,5 @@ div.container {
 
   span.count, span.label {
     .severity-text(@color);
-  }
-
-  &:hover {
-    span.label {
-      .severity-hover-text(@color);
-      .transition(.2s, ease-in-out);
-    }
   }
 }
