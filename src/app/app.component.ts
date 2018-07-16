@@ -12,7 +12,7 @@ import { NAV_PADDING } from './app.constants';
 })
 export class AppComponent implements OnInit {
   scrs:Scr[] = null;
-  navOffsetPadding:number = NAV_PADDING;
+  navOffsetPadding:string = String(NAV_PADDING + 'px');
 
   constructor(private scrService:ScrService) {}
 
