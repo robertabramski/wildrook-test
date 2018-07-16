@@ -7,9 +7,19 @@
 div.container {
   display: block;
   width: 100%;
-  background-color: @app-bg-color-light;
+  background-color: @app-bg-color-mid-light;
   border-bottom: 2px solid @app-bg-color;
   color: @app-bg-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @app-bg-color-light;
+    .transition(.15s, ease-in-out);
+
+    div.severity h3 span.badge {
+      background-color: @app-bg-color-mid-light;
+    }
+  }
 
   div.severity {
     border-left-width: @scr-item-left-border-width;
@@ -30,7 +40,7 @@ div.container {
         font-weight: 400;
         padding: 4px 10px 3px 9px;
         float: right;
-        background-color: @scr-item-badge-bg-color;
+        background-color: @app-bg-color-light;
         .border-radius(5px, 5px, 5px, 5px);
 
       }
