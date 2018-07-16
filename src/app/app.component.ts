@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
   constructor(private scrService:ScrService) {}
 
   ngOnInit() {
-    console.log(this.navOffsetPadding);
     this.scrService.get().subscribe(scrs => {
       this.scrs = scrs;
     });
