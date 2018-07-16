@@ -6,4 +6,4 @@ this file could easily grow.
 Specifically, this constant is used to avoid
 magic numbers across JS and CSS.
 */
-export const NAV_PADDING = 110;
+export const NAV_PADDING = 125;
