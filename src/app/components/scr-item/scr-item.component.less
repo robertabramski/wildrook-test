@@ -10,6 +10,16 @@ div.container {
   background-color: @app-bg-color-light;
   border-bottom: 2px solid @app-bg-color;
   color: @app-bg-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @scr-item-badge-bg-color;
+    .transition(.15s, ease-in-out);
+
+    div.severity h3 span.badge {
+      background-color: @app-bg-color-light;
+    }
+  }
 
   div.severity {
     border-left-width: @scr-item-left-border-width;
