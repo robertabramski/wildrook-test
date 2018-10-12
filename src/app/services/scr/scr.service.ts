@@ -1,3 +1,4 @@
+import { localEndpoint, wrEndpoint } from '../../app.constants';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
@@ -10,7 +11,7 @@ import { Scr, SeverityLevel } from './scr';
 export class ScrService {
 
   // This could probably exist in app.constants.
-  private url:string = 'https://auditwolftestdata.azurewebsites.net/api/SecurityControlRecommendations';
+  private url:string = localEndpoint;
 
   constructor(private http:HttpClient) { }
 
